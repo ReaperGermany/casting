@@ -26,8 +26,7 @@ $objCore->initFormController();
 		<link href='http://fonts.googleapis.com/css?family=Lobster&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
         <script type="text/javascript" language="javascript" src="javascript/jquery-1.3.2.js"></script>
         <script type="text/javascript" language="javascript" src="javascript/index.js"></script>
-        
-        <?php
+		 <?php
             #   AJAX
             if($objCore->getSessionInfo()->isLoggedIn())
             {
@@ -48,7 +47,6 @@ $objCore->initFormController();
                 ';
             }
         ?>
-        
         
 		<link rel="stylesheet" type="text/css" href="css/style.css"/>
 	<!--[if lt IE 9]>
@@ -139,80 +137,80 @@ $objCore->initFormController();
 								}
 								
 			  .invertedshiftdown{
-padding: 0;
-width: 100%;
-border-top: 5px solid #D10000; /*Red color theme*/
-background: transparent;
-voice-family: "\"}\"";
-voice-family: inherit;
-}
+				padding: 0;
+				width: 100%;
+				border-top: 5px solid #D10000; /*Red color theme*/
+				background: transparent;
+				voice-family: "\"}\"";
+				voice-family: inherit;
+				}
 
-.invertedshiftdown ul{
-margin:0;
-margin-left: 40px; /*margin between first menu item and left browser edge*/
-padding: 0;
-list-style: none;
-}
+				.invertedshiftdown ul{
+				margin:0;
+				margin-left: 40px; /*margin between first menu item and left browser edge*/
+				padding: 0;
+				list-style: none;
+				}
 
-.invertedshiftdown li{
-display: inline;
-margin: 0 2px 0 0;
-padding: 0;
-text-transform:uppercase;
-}
+				.invertedshiftdown li{
+				display: inline;
+				margin: 0 2px 0 0;
+				padding: 0;
+				text-transform:uppercase;
+				}
 
-.invertedshiftdown a{
-float: left;
-display: block;
-font: bold 12px Arial;
-color: black;
-text-decoration: none;
-margin: 0 1px 0 0; /*Margin between each menu item*/
-padding: 5px 10px 9px 10px; /*Padding within each menu item*/
-background-color: white; /*Default menu color*/
+				.invertedshiftdown a{
+				float: left;
+				display: block;
+				font: bold 12px Arial;
+				color: black;
+				text-decoration: none;
+				margin: 0 1px 0 0; /*Margin between each menu item*/
+				padding: 5px 10px 9px 10px; /*Padding within each menu item*/
+				background-color: white; /*Default menu color*/
 
-/*BELOW 4 LINES add rounded bottom corners to each menu item.
-  ONLY WORKS IN FIREFOX AND FUTURE CSS3 CAPABLE BROWSERS
-  REMOVE IF DESIRED*/
--moz-border-radius-bottomleft: 5px;
-border-bottom-left-radius: 5px;
--moz-border-radius-bottomright: 5px;
-border-bottom-right-radius: 5px;
-}
+				/*BELOW 4 LINES add rounded bottom corners to each menu item.
+				  ONLY WORKS IN FIREFOX AND FUTURE CSS3 CAPABLE BROWSERS
+				  REMOVE IF DESIRED*/
+				-moz-border-radius-bottomleft: 5px;
+				border-bottom-left-radius: 5px;
+				-moz-border-radius-bottomright: 5px;
+				border-bottom-right-radius: 5px;
+				}
 
-.invertedshiftdown a:hover{
-background-color: #D10000; /*Red color theme*/
-padding-top: 9px; /*Flip default padding-top value with padding-bottom */
-padding-bottom: 5px; /*Flip default padding-bottom value with padding-top*/
-color: white;
-}
+				.invertedshiftdown a:hover{
+				background-color: #D10000; /*Red color theme*/
+				padding-top: 9px; /*Flip default padding-top value with padding-bottom */
+				padding-bottom: 5px; /*Flip default padding-bottom value with padding-top*/
+				color: white;
+				}
 
-.invertedshiftdown .current a{ /** currently selected menu item **/
-background-color: #D10000; /*Red color theme*/
-padding-top: 9px; /*Flip default padding-top value with padding-bottom */
-padding-bottom: 5px; /*Flip default padding-bottom value with padding-top*/
-color: white;
-}
+				.invertedshiftdown .current a{ /** currently selected menu item **/
+				background-color: #D10000; /*Red color theme*/
+				padding-top: 9px; /*Flip default padding-top value with padding-bottom */
+				padding-bottom: 5px; /*Flip default padding-bottom value with padding-top*/
+				color: white;
+				}
 
-#myform{ /*CSS for sample search box. Remove if desired */
-float: right;
-margin: 0;
-margin-top: 2px;
-padding: 0;
-}
+				#myform{ /*CSS for sample search box. Remove if desired */
+				float: right;
+				margin: 0;
+				margin-top: 2px;
+				padding: 0;
+				}
 
-#myform .textinput{
-width: 190px;
-border: 1px solid gray;
-}
+				#myform .textinput{
+				width: 190px;
+				border: 1px solid gray;
+				}
 
-#myform .submit{
-font: normal 12px Verdana;
-height: 22px;
-border: 1px solid #D10000;
-background-color: black;
-color: white;
-}
+				#myform .submit{
+				font: normal 12px Verdana;
+				height: 22px;
+				border: 1px solid #D10000;
+				background-color: black;
+				color: white;
+				}
 		</style>
 
   </head>
@@ -266,58 +264,40 @@ color: white;
             </tr>
             <tr valign="top">
                 <td width="200" >
-                    <div style="background: rgba(0,0,0,.2);-moz-border-radius: .5em;-webkit-border-radius: .5em;"><img src="img/1.jpg"; border="1";"></div>
+                    <div style="background: rgba(0,0,0,.2);-moz-border-radius: .5em;-webkit-border-radius: .5em;"></div>
                 </td>
                 <td>
                     <div style="background: #c1c1c1;-moz-border-radius: .5em;-webkit-border-radius: .5em; text-align:left;" id="cnt">
-						<div class="invertedshiftdown">
-							<ul>
-							    <li><a href="#rA" data-toggle="tab">Основное</a></li>
-							    <li><a href="#rB" data-toggle="tab">Контакты</a></li>
-							    <li><a href="#rC" data-toggle="tab">Интересы</a></li>
-							    <li><a href="#rD" data-toggle="tab">Образование</a></li>
-							    <li><a href="">Карьера</a></li>
-							</ul>
-                        </div>
-                        <div class="">
-						    <div id="rA" class="tab-pane fade in active">
-								    Фамилия:
-								    Отчество:
-								    Псевдоним (если есть):
-								    Дата рождения:
-								    Семейное положение:
-								    Ваши Дети (номер анкеты на нашем сайте): 
-								    Телефон мобильный:
-								    Телефон дополнительный:
-								    Email:
-								    Сайт (если есть):
-								    Адрес Странички в соц сети (если есть):
-								    Наличие загран паспорта:
-								    Постоянное место нахождение:
-								    Ближайшая станция метро:
-								    Цвет волос:
-								    Цвет глаз:
-								    Рост:
-								    Размер обуви:
-								    Размер одежды:
-								    Размер головного убора:
-								    Объем:
-								    Наличие тату:
-								    Наличие шрамов: 
-								    Приметные внешние особенности:
-						    </div>
-						    <div id="rB" class="tab-pane fade" style="position: absolute">
-							    SDFSHDFKHSJKDF
-						    </div>
-                            <div id="rC" class="tab-pane fade" style="position: absolute">
-                                TAB #3
-                            </div>
-                            <div id="rD" class="tab-pane fade" style="position: absolute">
-                                TAB #4
-                            </div>
+						<div class="tabbable"> 
+							  <ul class="nav nav-tabs">
+								<li class="active"><a href="#tab1" data-toggle="tab">Основное</a></li>
+								<li><a href="#tab2" data-toggle="tab">Контакты</a></li>
+								<li><a href="#tab3" data-toggle="tab">Интересы</a></li>
+								<li><a href="#tab4" data-toggle="tab">Образование</a></li>
+								<li><a href="#tab5" data-toggle="tab">Карьера</a></li>
+							  </ul>
+							  <div class="tab-content">
+								<div class="tab-pane active" id="tab1">
+								  <p>Я в Разделе 1.</p>
+								</div>
+								<div class="tab-pane" id="tab2">
+								  <p>Привет, я в Разделе 2.</p>
+								</div>
+								<div class="tab-pane" id="tab3">
+								  <p>Привет, я в Разделе 3.</p>
+								</div>
+								<div class="tab-pane" id="tab4">
+								  <p>Привет, я в Разделе 4.</p>
+								</div>
+								<div class="tab-pane" id="tab5">
+								  <p>Привет, я в Разделе 5.</p>
+								</div>
+							  </div>
+					</div>
+					
                         </div>
 				    </div>
-                    <br style="clear: both;" />
+               
              </td>
             </tr>
         </table>

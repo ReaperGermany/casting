@@ -62,124 +62,70 @@
 								<li><a href="#tab5" data-toggle="tab">Карьера</a></li>
 							  </ul>
 							  <div class="tab-content">
-								<div class="tab-pane active" id="tab1">
-								  <form action="anketa.php" method="post">
-										<table>
-											<tr>
-												<td><b>Фамилия:</b></td>
-												<td><input type="text" name="family"/></td>
-											</tr>
-									
-											<tr>
-												<td><b>Имя:</b></td>
-												<td><input type="text" name="name"/></td>
-											</tr>
-									
-											<tr>
-												<td><b>Отчество:</b></td>
-												<td><input type="text" name="name2"/></td>
-											</tr>
-									
-											<tr>
-												<td><b>Псевдоним (если есть):</b></td>
-												<td><input type="text" name="nickname"/></td>
-											</tr>
+								<div class="tab-pane active" id="tab1" style="width: 100%; height:100%; overflow: auto">
+								 <form method = "post" style="padding-left:20px">
 
-											<tr>
-												<td><b>Дата рождения:</b></td>
-												<td><input type="text" size="1px" name="birth"/></td>
-												<td><input type="text" size="1px" name="birth"/></td>
-												<td><input type="text" size="1px" name="birth"/></td>
-											</tr>
-
-											<tr>
-												<td><b>Семейное положение:</b></td>
-												<td><select name="sp">
-													<option value="1">Женат</option>
-													<option value="2">Замужем</option>
-													<option value="3">Не женат</option>
-													<option value="4">Не замужем</option>
-													<option value="5">В разводе</option>
-													<option value="6">В поисках</option>
-													<option value="7">Вдова</option>
-													<option value="8">Вдовец</option>
-													</select>
-												</td>
-											</tr>
-											<tr>
-												<td><b>Ваши Дети (номер анкеты на нашем сайте):</b></td>
-												<td><input type="text" name="kids"/></td>
-											</tr>
-											<tr>
-												<td><b>Наличие загран паспорта:</b></td>
-												<td><input type = "radio" name = "pasport">Да</td><br>
-												<td><b>Срок действия:</b></td>
-												<td><input type="text" name="srok"/></td>
-												<td><input type = "radio" name = "pasport">Нет</td>
-											</tr>
-											<tr>
-												<td><b>Постоянное место нахождение:</b></td>
-												<td><textarea name="location" heigth="20px" id="location">Ваш адрес.</textarea></td>
-											</tr> 
-											<tr>
-												<td><b>Ближайшая станция метро:</b></td>
-												<td><input type="text" name="metro"></td>
-											</tr>
-											<tr>
-												<td><b>Цвет волос:</b></td>
-												<td><input type="text" name="colorHear"></td>
-											</tr>
-											<tr>
-												<td><b>Цвет глаз:</b></td>
-												<td><input type="text" name="colorEye"/></td>
-											</tr>
-											<tr>
-												<td><b>Рост:</b></td>
-												<td><input type="text" name="stature"/></td>
-											</tr>
-											<tr>
-												<td><b>Размер обуви:</b></td>
-												<td><input type="text" name="shoeSize"/></td>
-											</tr>
-											<tr>
-												<td><b>Размер одежды:</b></td>
-												<td><input type="text" name="dressSize"/></td>
-											</tr>
-											<tr>
-												<td><b>Размер головного убора:</b></td>
-												<td><input type="text" name="hatSize"/></td>
-											</tr>
-											<tr>
-												<td><b>Объем:</b></td>
-												<td>Талия</td>
-												<td><input type="text" size="1px" name="tal"/></td>
-												<td>Грудь</td>
-												<td><input type="text" size="1px" name="sis"/></td>
-												<td>Бедра</td>
-												<td><input type="text" size="1px" name="bedr"/></td>
-											</tr>
-											<tr>
-												<td><b>Наличие тату:</b></td>
-												<td><input type = "radio" name = "tatoo">Да</td>
-												<td><b>Где:</b></td>
-												<td><input type="text" name="tatooWhere"/></td>
-												<td><input type = "radio" name = "tatoo">Нет</td>
-											</tr>
-											<tr>
-												<td><b>Наличие шрамов: </b></td>
-												<td><input type = "radio" name = "cicatrice">Да</td>
-												<td><b>Где:</b></td>
-												<td><input type="text" name="cicatriceWhere"/></td>
-												<td><input type = "radio" name = "cicatrice">Нет</td>  
-											</tr>
-											<tr>
-												<td><b>Приметные внешние особенности:</b></td>
-												<td><textarea name="sings" heigth="20px" id="sings">Опишите Ваши особые приметы.</textarea></td>
-											</tr>
-											
-										</table>
+									<p><b>Фамилия:</b><br>
+									<input type="text" name="famely" size="15" maxlength="25" value=""><br>
+									<b>Имя:</b><br>
+									<input type="text" name="name" size="15" maxlength="45" value=""><br>
+									<b>Отчество:</b><br>
+									<input type="text" name="forname" size="15" maxlength="45" value=""><br>
+									<b>Дата рождения:</b>
+									<input type="text" size="1px" name="birth_day"/>
+									<input type="text" size="1px" name="birth_mon"/>
+									<input type="text" size="5px" name="birth_jahr"/></br>
+									<b>Семейное положение:</b><br>
+									<select name="sp">
+										<option value="1">Женат</option>
+										<option value="2">Замужем</option>
+										<option value="3">Не женат</option>
+										<option value="4">Не замужем</option>
+										<option value="5">В разводе</option>
+										<option value="6">В поисках</option>
+										<option value="7">Вдова</option>
+										<option value="8">Вдовец</option>
+									</select><br>
+									<b>Ваши Дети (номер анкеты на нашем сайте):</b>
+									<input type="text" name="kids"/><br>
+									<b>Наличие загран паспорта:</b>
+									<input type = "radio" name = "pasport_yes">Да</input>
+									<input type = "radio" name = "pasport_no">Нет</input><br>
+									<b>Постоянное место нахождение:</b><br>
+									<textarea name="location" heigth="20px" id="location">Ваш адрес.</textarea><br>
+									<b>Ближайшая станция метро:</b><br>
+									<input type="text" name="metro"><br>
+									<b>Цвет волос:</b><br>
+									<input type="text" name="colorHear"><br>
+									<b>Цвет глаз:</b>
+									<input type="text" name="colorEye"/><br>
+									<b>Рост:</b><br>
+									<input type="text" name="stature"/><br>
+									<b>Размер обуви:</b>
+									<input type="text" name="shoeSize"/><br>
+									<b>Размер одежды:</b></td>
+									<input type="text" name="dressSize"/>
+									<b>Размер головного убора:</b></td>
+									<input type="text" name="hatSize"/><br>
+									<b>Объем:</b><br>
+										Талия: <input type="text" size="1px" name="tal"/><br>
+										Грудь: <input type="text" size="1px" name="sis"/><br>
+										Бедра: <input type="text" size="1px" name="bedr"/><br>
+									<b>Наличие тату:</b><br>
+										<input type = "radio" name = "tatoo">Да</td>
+										<b>Где:</b><br>
+										<input type="text" name="tatooWhere"/>
+										<input type = "radio" name = "tatoo">Нет<br>
+										<b>Наличие шрамов: </b><br>
+										<input type = "radio" name = "cicatrice">Да
+										<b>Где:</b></td>
+										<input type="text" name="cicatriceWhere"/>
+										<input type = "radio" name = "cicatrice">Нет<br> 
+										<b>Приметные внешние особенности:</b><br>
+										<textarea name="sings" heigth="20px" id="sings">Опишите Ваши особые приметы.</textarea><br>
+										<input type="submit" value="Submit!">
 									</form>
-																</div>
+								</div>
 																<div class="tab-pane" id="tab2">
 																  <p>Привет, я в Разделе 2.</p>
 																</div>
@@ -194,6 +140,14 @@
 																</div>
 															  </div>
 													</div>';
+													
+														if(isset($_POST['sub'])) {
+															$famely = $_POST['famely'];
+															$name = $_POST['name'];
+															$vorname= $_POST['vorname'];}
+															$sql = "INSERT INTO anketa (famely,name,vorname) VALUES ('$famely','$name','$address','$vorname')";
+													
+													
                     break;
                 default:
                     echo 'CONTENT #DEFAULT';
